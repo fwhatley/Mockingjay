@@ -2,6 +2,12 @@
 
 > Chrome Extension that allows to have shortcuts keys to add key value pairs into local storage
 ## Getting Started
+```sh
+# run dev environment
+npm install
+gulp watch
+````
+
 
 ```sh
 # Transform updated source written by ES2015 (default option)
