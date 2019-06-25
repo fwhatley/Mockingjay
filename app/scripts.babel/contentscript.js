@@ -1,9 +1,13 @@
 
-// (function () {
   'use strict';
 
   function addToLocalStorage(key, value) {
     localStorage.setItem(key, value)
+  }
+
+  function removeMocksFromLocalStorage() {
+    localStorage.removeItem('posMock');
+    localStorage.removeItem('appMock');
   }
 
   function isCtrlKeyPressed(event) {
@@ -14,11 +18,6 @@
   function isCharacterPressed(event, character) {
     var evtobj = window.event ? event : e;
     return String.fromCharCode(evtobj.which) === character;
-  }
-
-  function removeMocksFromLocalStorage() {
-    localStorage.removeItem('posMock');
-    localStorage.removeItem('appMock');
   }
 
   function getKeyValuePairs() {
@@ -53,4 +52,3 @@
   // NOTE: PLEASE ONLY EDIT THE JS FILES INSIDE SCRIPTS.BABLE. OTHER SCRIPTS WITH THE SAME NAME AS IN .BABEL ARE AUTO-GENERATED
   document.onkeypress = detectspecialkeys;
   
-// })();
