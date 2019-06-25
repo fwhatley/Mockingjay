@@ -1,4 +1,4 @@
-# Mockingjay[![Build Status](https://secure.travis-ci.org/yeoman/generator-chrome-extension.svg?branch=master)](http://travis-ci.org/yeoman/generator-chrome-extension)
+# Mockingjay  [![Build Status](https://travis-ci.org/fwhatley/Mockingjay.svg?branch=master)](https://travis-ci.org/fwhatley/Mockingjay)
 
 > Chrome Extension that allows to have shortcuts keys to add key value pairs into local storage
 ## Getting Started
@@ -21,6 +21,9 @@ gulp build
 
 # Zip folder so app is ready to upload to Chrome store
 gulp package
+
+# run tests
+npm test
 ```
 
 ## Test Chrome Extension
