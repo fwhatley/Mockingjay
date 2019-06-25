@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -16,15 +16,21 @@
   },
   "permissions": [
     "activeTab",
-    "http://*/*",
-    "https://*/*",
+    "https://localhost:7001/posui/*",
+    "https://localhost:7002/posui/*",
+    "https://localhost:7003/posui/*",
+    "https://cwposdev.cricketwireless.com/posui/*",
+    "https://cwpostest.cricketwireless.com/posui/*",
     "storage"
   ],
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "https://localhost:7001/posui/*",
+        "https://localhost:7002/posui/*",
+        "https://localhost:7003/posui/*",
+        "https://cwposdev.cricketwireless.com/posui/*",
+        "https://cwpostest.cricketwireless.com/posui/*"
       ],
       "js": [
         "scripts/contentscript.js"
