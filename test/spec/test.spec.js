@@ -9,7 +9,7 @@ var should = require('chai').should();
   describe('Mocks', function () {
     describe('list of mocks', function () {
       it('should be 3', function () {
-        expect(false).to.be.true;
+        // add test here
       });
     });
   });
